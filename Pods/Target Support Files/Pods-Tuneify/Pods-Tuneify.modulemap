@@ -1,0 +1,6 @@
+framework module Pods_Tuneify {
+  umbrella header "Pods-Tuneify-umbrella.h"
+
+  export *
+  module * { export * }
+}

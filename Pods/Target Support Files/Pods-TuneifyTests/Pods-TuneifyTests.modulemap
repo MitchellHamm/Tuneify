@@ -1,0 +1,6 @@
+framework module Pods_TuneifyTests {
+  umbrella header "Pods-TuneifyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

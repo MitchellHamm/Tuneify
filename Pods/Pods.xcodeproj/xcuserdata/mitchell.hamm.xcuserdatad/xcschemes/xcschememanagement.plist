@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Beethoven.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pitchy.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Tuneify.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TuneifyTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TuneifyUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3A0739323066FCA67D3CC718AB646901</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3F2148881B422F7499162ACACC37D143</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>68ACC5C3C486397D46726424FF739A82</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D547ECBAFD0BAC79D81AE36137B80925</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDF52B4A46E8C7F88C53FC0391ABB6D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,1138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000B8C35B1DE8683E4C96AB09374E457 /* Pods-TuneifyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D75571B0DC493EB01228566BE50777 /* Pods-TuneifyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00246FD6608E81995867F19253EE29AE /* Pods-TuneifyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3F174A47E37B2D82FF40D8F2DB56AF /* Pods-TuneifyTests-dummy.m */; };
+		0D0F309DC3A69EE1B12FC3327839C85C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */; };
+		0DF682557E4E56CF2E6204A510B39EAA /* Pitchy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */; };
+		197E8602976643CB9329010568986AFC /* PitchCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */; };
+		1ACCAD57CE934B6110C14CF4A53F7745 /* NoteCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */; };
+		251018738E93FDD329D3CDC028CBFB4C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E959060BF437E90A271F32EA86031C4A /* AVFoundation.framework */; };
+		2E4FE147AE34E3F2155B66A91E389FDF /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */; };
+		2FC2B94F8965DB44B4F1A2552BC70511 /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */; };
+		37D7598C4598060384560906F1A0B6C7 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */; };
+		3BB2534DCF13A506F1BEA2FFB530BA65 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */; };
+		3E2E09E45D3E8C651AE4C6F6B4418D16 /* Pitchy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */; };
+		3EA3D6FE284197163A75940BB41BB1BC /* TransformStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */; };
+		3F6A29B571A4D5FB8792CBCF4C92BD56 /* OutputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */; };
+		41723B68CBD00651409567CDA05A8EF9 /* Pods-TuneifyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F2B293EC201AE02E6EC5DA6548F50 /* Pods-TuneifyUITests-dummy.m */; };
+		43573F03D53511D1412B71AFF07AC07A /* HPSEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */; };
+		44F7DF4EBA12C2E9D12B03D4C78D9418 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4723B379FCE77CFDE43B413C7CEF77EE /* Accelerate.framework */; };
+		4534DB58B44B2A5B0A877395EECDE26A /* WaveCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */; };
+		4D3D09096DF0CA61BE79FB142091A7FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */; };
+		4E744D8A69FEB22A3BCCBC116FB7EEE8 /* Pods-Tuneify-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFF3BA08ED1D90095771CEBA6427E66 /* Pods-Tuneify-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		559DFCBE5D8C7A43125930F08E125094 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */; };
+		56BE2E91871CB441CADCB53B2C77B398 /* Beethoven-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */; };
+		6378051D71EA27AF7724DC783FAD0702 /* QuinnsFirstEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */; };
+		63997D8F0F4649CB330965E3AC466DDC /* SignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */; };
+		6C0A8E721107BEB86C3F40EE27A86245 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */; };
+		6F49484E7A394DBFCA5AF2C6ABFB3D91 /* QuadradicEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */; };
+		6F90BD17C9A552F3579230348DC130E0 /* EstimationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */; };
+		70B92815323E77F69937824CA239B6AB /* EstimationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */; };
+		7A9DD3E14321AC34CEF70318D3DD4CCC /* Pods-Tuneify-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B1622010474201AC4E61B7DE02CB269D /* Pods-Tuneify-dummy.m */; };
+		7B2496FC2CAC29495D0A09946EFD16CE /* AcousticWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */; };
+		7CD913E68D464F91CF9594ECFE49F771 /* Pitchy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D410872C0A2200E60497AB8395F59C7 /* Estimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */; };
+		8F2A7C3469E600FFBC6056F79B322EC1 /* InputSignalTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */; };
+		9D818CC379B5B18946157208A0A499AF /* LocationEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */; };
+		A02FA725368B9F5067246B16D22B805F /* EstimationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */; };
+		A86AADDD78E4FB9A5C003F9DBD66B98E /* PitchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */; };
+		AD6D159AADAE2502F2EF93D7DA435CC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */; };
+		B53BF1FEF596691B0012678DF6F6F71C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */; };
+		C210855722BA44E4FDE24BAC79A7B44C /* FFTTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */; };
+		C2EC4B13DC0F85298B2B85AE871DBD35 /* BarycentricEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */; };
+		CDB5976F897591D6C6A8E18747ABB9FC /* TransformFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */; };
+		CF6EC2DD2E16B730DDF73C88506952CA /* Beethoven-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66CF97558043E31EA40777AE2A84097 /* Pods-TuneifyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D90FC710CF16B80811A12CA52387C86 /* Pods-TuneifyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7498158B940FA0C972641DAAF82471E /* Pitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */; };
+		D8928D93897D5410F8BD5A598C0193B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */; };
+		F62CE5BE0F614AA64FAF792D6DDF282D /* JainsEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */; };
+		FC9EDC8175C71637AAE282A0B66A6E11 /* QuinnsSecondEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */; };
+		FD8AF364A38CA22F7A6A5984EC5753C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */; };
+		FE1278517CF18A25FDD8488772A6FDA5 /* SimpleTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */; };
+		FF313B4F21C8A80D417A41F5850D346B /* MaxValueEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		146E28BA5A0F4C84184123145ED5E119 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2148881B422F7499162ACACC37D143;
+			remoteInfo = Beethoven;
+		};
+		4A50897655F84AC8B87535AD26B2C9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D547ECBAFD0BAC79D81AE36137B80925;
+			remoteInfo = Pitchy;
+		};
+		6017C46D344F982C1CE0038EB73CA894 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D547ECBAFD0BAC79D81AE36137B80925;
+			remoteInfo = Pitchy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JainsEstimator.swift; path = Source/Estimation/Strategies/JainsEstimator.swift; sourceTree = "<group>"; };
+		11DDD8CB61174E57DCE71A2AB7B8FED0 /* Pods-TuneifyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TuneifyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		183154654881ECFD0A95094CBBDB4256 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchCalculator.swift; path = Source/Calculators/PitchCalculator.swift; sourceTree = "<group>"; };
+		1B8D37A363629DDB3EDB54B6D7D2A919 /* Pods-TuneifyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TuneifyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		224A29A198FEF91E04BF356DB67F76E4 /* Pods-TuneifyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TuneifyUITests.modulemap"; sourceTree = "<group>"; };
+		2A675B47DCD4B1E820550656B926D992 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3055F3A408E19B4EAA805019786F9707 /* Pods-TuneifyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TuneifyTests-resources.sh"; sourceTree = "<group>"; };
+		30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationFactory.swift; path = Source/Estimation/EstimationFactory.swift; sourceTree = "<group>"; };
+		34629412C0B84C44B7FA150DDC7B5154 /* Pods-TuneifyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TuneifyUITests-resources.sh"; sourceTree = "<group>"; };
+		35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extensions.swift"; path = "Source/Extensions/Array+Extensions.swift"; sourceTree = "<group>"; };
+		38968098E593EB75EBB4F3C22E452AE3 /* Pods-TuneifyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TuneifyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		3A5E2949914210419BEEAE8A8F78FFA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BB3A2CEC5AD79FE80B64E661525D3D3 /* Pods-TuneifyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TuneifyTests.modulemap"; sourceTree = "<group>"; };
+		3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FFTTransformer.swift; path = Source/Transform/Strategies/FFTTransformer.swift; sourceTree = "<group>"; };
+		3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SignalTracker.swift; path = Source/SignalTracking/SignalTracker.swift; sourceTree = "<group>"; };
+		3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-umbrella.h"; sourceTree = "<group>"; };
+		401AA13A8B2D30758CADD92170FB0180 /* Pods-Tuneify-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tuneify-acknowledgements.plist"; sourceTree = "<group>"; };
+		435D29092BAEBF8657F654DA124F0FCA /* Pods_TuneifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Beethoven-dummy.m"; sourceTree = "<group>"; };
+		4441A62D7034435D2C281A933C5967B9 /* Pods-TuneifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuneifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4723B379FCE77CFDE43B413C7CEF77EE /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pitch.swift; path = Source/Data/Pitch.swift; sourceTree = "<group>"; };
+		5A615469987137F5153736B6F59C04ED /* Pods-TuneifyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TuneifyTests-frameworks.sh"; sourceTree = "<group>"; };
+		5C30803508053CBB8ED3339DE0BCE72C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D90FC710CF16B80811A12CA52387C86 /* Pods-TuneifyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TuneifyUITests-umbrella.h"; sourceTree = "<group>"; };
+		5E3F2B293EC201AE02E6EC5DA6548F50 /* Pods-TuneifyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TuneifyUITests-dummy.m"; sourceTree = "<group>"; };
+		5EDFCD9E8A12E73690EC326F4A639546 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FD2543D8008BA09B2A0E274A48DCFA0 /* Beethoven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Beethoven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleTransformer.swift; path = Source/Transform/Strategies/SimpleTransformer.swift; sourceTree = "<group>"; };
+		62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Beethoven.xcconfig; sourceTree = "<group>"; };
+		647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsSecondEstimator.swift; path = Source/Estimation/Strategies/QuinnsSecondEstimator.swift; sourceTree = "<group>"; };
+		6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Note.swift; path = Source/Data/Note.swift; sourceTree = "<group>"; };
+		70D75571B0DC493EB01228566BE50777 /* Pods-TuneifyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TuneifyTests-umbrella.h"; sourceTree = "<group>"; };
+		769510C929EF83FAD2682054D7F1C44D /* Beethoven.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Beethoven.modulemap; sourceTree = "<group>"; };
+		7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationEstimator.swift; path = Source/Estimation/LocationEstimator.swift; sourceTree = "<group>"; };
+		7BA3B6D8AECE295CBE052C4846FCE135 /* Pitchy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-prefix.pch"; sourceTree = "<group>"; };
+		819E56926A6AAACBC55EF3D62A33238E /* Pods-TuneifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuneifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		839345511F3AEDE85525CE67BA31D139 /* Pods-Tuneify.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Tuneify.modulemap"; sourceTree = "<group>"; };
+		852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pitchy-dummy.m"; sourceTree = "<group>"; };
+		861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PitchEngine.swift; path = Source/PitchEngine.swift; sourceTree = "<group>"; };
+		89B1C5096D5C30949188315EE2E8DC0E /* Pods_Tuneify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tuneify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D2DED7263874FC93C0876D9E504B292 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pitchy.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Estimator.swift; path = Source/Estimation/Estimator.swift; sourceTree = "<group>"; };
+		9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pitchy-umbrella.h"; sourceTree = "<group>"; };
+		9EC31A4B7CC2FFBBC4B425D661C0016C /* Pods_TuneifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AcousticWave.swift; path = Source/Data/AcousticWave.swift; sourceTree = "<group>"; };
+		A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuinnsFirstEstimator.swift; path = Source/Estimation/Strategies/QuinnsFirstEstimator.swift; sourceTree = "<group>"; };
+		A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaxValueEstimator.swift; path = Source/Estimation/Strategies/MaxValueEstimator.swift; sourceTree = "<group>"; };
+		B1622010474201AC4E61B7DE02CB269D /* Pods-Tuneify-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tuneify-dummy.m"; sourceTree = "<group>"; };
+		B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Source/Data/Buffer.swift; sourceTree = "<group>"; };
+		B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WaveCalculator.swift; path = Source/Calculators/WaveCalculator.swift; sourceTree = "<group>"; };
+		BA71E3219C8ADF44203E8FEA68780499 /* Pods-TuneifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuneifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEA9136F3AB237F4EFB2CAA257C167D2 /* Pods-TuneifyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TuneifyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1A347D1F3F5A29DFEE9E47B7CA077E9 /* Pods-Tuneify-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tuneify-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadradicEstimator.swift; path = Source/Estimation/Strategies/QuadradicEstimator.swift; sourceTree = "<group>"; };
+		C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoteCalculator.swift; path = Source/Calculators/NoteCalculator.swift; sourceTree = "<group>"; };
+		C8D09E2535F22EE4AC9A5AE689F58EB1 /* Pods-TuneifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TuneifyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BarycentricEstimator.swift; path = Source/Estimation/Strategies/BarycentricEstimator.swift; sourceTree = "<group>"; };
+		CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OutputSignalTracker.swift; path = Source/SignalTracking/Units/OutputSignalTracker.swift; sourceTree = "<group>"; };
+		CF1EA5B888A27CD4CDF085452D7D8323 /* Pods-Tuneify-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tuneify-frameworks.sh"; sourceTree = "<group>"; };
+		CF80846C71C143DDEB88FED9810A147B /* Pods-Tuneify-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tuneify-resources.sh"; sourceTree = "<group>"; };
+		CFFF3BA08ED1D90095771CEBA6427E66 /* Pods-Tuneify-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tuneify-umbrella.h"; sourceTree = "<group>"; };
+		D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HPSEstimator.swift; path = Source/Estimation/Strategies/HPSEstimator.swift; sourceTree = "<group>"; };
+		D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Source/Transform/Transformer.swift; sourceTree = "<group>"; };
+		D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pitchy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformStrategy.swift; path = Source/Transform/TransformStrategy.swift; sourceTree = "<group>"; };
+		D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationError.swift; path = Source/Estimation/EstimationError.swift; sourceTree = "<group>"; };
+		D83530F5B6979010261E361F06ACA5F7 /* Pitchy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pitchy.modulemap; sourceTree = "<group>"; };
+		DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformFactory.swift; path = Source/Transform/TransformFactory.swift; sourceTree = "<group>"; };
+		DE3F174A47E37B2D82FF40D8F2DB56AF /* Pods-TuneifyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TuneifyTests-dummy.m"; sourceTree = "<group>"; };
+		DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InputSignalTracker.swift; path = Source/SignalTracking/Units/InputSignalTracker.swift; sourceTree = "<group>"; };
+		E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = Source/Config.swift; sourceTree = "<group>"; };
+		E70D87736788BE487417B84D183ACC6A /* Pods-TuneifyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TuneifyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E959060BF437E90A271F32EA86031C4A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB46432D8FDEB5D51621A6E36E72C844 /* Pods-Tuneify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tuneify.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		F16D544274370D73CA52D6CC3FABF660 /* Beethoven-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Beethoven-prefix.pch"; sourceTree = "<group>"; };
+		F3F2BDFDA90E24CD34F9AC67382DF2BE /* Pods-Tuneify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tuneify.release.xcconfig"; sourceTree = "<group>"; };
+		F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EstimationStrategy.swift; path = Source/Estimation/EstimationStrategy.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		015AA290B2E32CABC9657DEC62E3A1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F7DF4EBA12C2E9D12B03D4C78D9418 /* Accelerate.framework in Frameworks */,
+				251018738E93FDD329D3CDC028CBFB4C /* AVFoundation.framework in Frameworks */,
+				FD8AF364A38CA22F7A6A5984EC5753C5 /* Foundation.framework in Frameworks */,
+				0DF682557E4E56CF2E6204A510B39EAA /* Pitchy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C464ECFDD2AC596DAF9E7CA07A21C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6D159AADAE2502F2EF93D7DA435CC7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FBDEC02F1A4DA5E4022CB6C0CBF0717 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D3D09096DF0CA61BE79FB142091A7FC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2909C5E6BBA00361A9DC429C42C68E54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8928D93897D5410F8BD5A598C0193B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41DC1DB75FF867386124BF80E8D6DBAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B53BF1FEF596691B0012678DF6F6F71C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		220F915B72FF522E84851685AA7575BF /* Pods-Tuneify */ = {
+			isa = PBXGroup;
+			children = (
+				183154654881ECFD0A95094CBBDB4256 /* Info.plist */,
+				839345511F3AEDE85525CE67BA31D139 /* Pods-Tuneify.modulemap */,
+				C1A347D1F3F5A29DFEE9E47B7CA077E9 /* Pods-Tuneify-acknowledgements.markdown */,
+				401AA13A8B2D30758CADD92170FB0180 /* Pods-Tuneify-acknowledgements.plist */,
+				B1622010474201AC4E61B7DE02CB269D /* Pods-Tuneify-dummy.m */,
+				CF1EA5B888A27CD4CDF085452D7D8323 /* Pods-Tuneify-frameworks.sh */,
+				CF80846C71C143DDEB88FED9810A147B /* Pods-Tuneify-resources.sh */,
+				CFFF3BA08ED1D90095771CEBA6427E66 /* Pods-Tuneify-umbrella.h */,
+				EB46432D8FDEB5D51621A6E36E72C844 /* Pods-Tuneify.debug.xcconfig */,
+				F3F2BDFDA90E24CD34F9AC67382DF2BE /* Pods-Tuneify.release.xcconfig */,
+			);
+			name = "Pods-Tuneify";
+			path = "Target Support Files/Pods-Tuneify";
+			sourceTree = "<group>";
+		};
+		30213C47D4FE0D2B01EE418C3DB83F3A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				769510C929EF83FAD2682054D7F1C44D /* Beethoven.modulemap */,
+				62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */,
+				43CAB5727CEB72BBF6BE88EF42B9A85A /* Beethoven-dummy.m */,
+				F16D544274370D73CA52D6CC3FABF660 /* Beethoven-prefix.pch */,
+				3F2A3CD6AF88725DCAB47EE30B1E530F /* Beethoven-umbrella.h */,
+				5EDFCD9E8A12E73690EC326F4A639546 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Beethoven";
+			sourceTree = "<group>";
+		};
+		36B6C4397BC37F50A586466E71EBA7D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E2949914210419BEEAE8A8F78FFA1 /* Info.plist */,
+				D83530F5B6979010261E361F06ACA5F7 /* Pitchy.modulemap */,
+				916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */,
+				852AD3D95C5D323D6D59A972564F3894 /* Pitchy-dummy.m */,
+				7BA3B6D8AECE295CBE052C4846FCE135 /* Pitchy-prefix.pch */,
+				9AA5C5D708D654B04CE7F6DB5DF0F093 /* Pitchy-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pitchy";
+			sourceTree = "<group>";
+		};
+		4511CC30BA17DAD4E66D7597B0E076F1 /* Pods-TuneifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A675B47DCD4B1E820550656B926D992 /* Info.plist */,
+				3BB3A2CEC5AD79FE80B64E661525D3D3 /* Pods-TuneifyTests.modulemap */,
+				E70D87736788BE487417B84D183ACC6A /* Pods-TuneifyTests-acknowledgements.markdown */,
+				BEA9136F3AB237F4EFB2CAA257C167D2 /* Pods-TuneifyTests-acknowledgements.plist */,
+				DE3F174A47E37B2D82FF40D8F2DB56AF /* Pods-TuneifyTests-dummy.m */,
+				5A615469987137F5153736B6F59C04ED /* Pods-TuneifyTests-frameworks.sh */,
+				3055F3A408E19B4EAA805019786F9707 /* Pods-TuneifyTests-resources.sh */,
+				70D75571B0DC493EB01228566BE50777 /* Pods-TuneifyTests-umbrella.h */,
+				BA71E3219C8ADF44203E8FEA68780499 /* Pods-TuneifyTests.debug.xcconfig */,
+				819E56926A6AAACBC55EF3D62A33238E /* Pods-TuneifyTests.release.xcconfig */,
+			);
+			name = "Pods-TuneifyTests";
+			path = "Target Support Files/Pods-TuneifyTests";
+			sourceTree = "<group>";
+		};
+		63640E48094D101B0B363CC8A8D7E85F /* Beethoven */ = {
+			isa = PBXGroup;
+			children = (
+				35056A15A465E7FBAA6277A8BC92D0C1 /* Array+Extensions.swift */,
+				CAC2CB3AD92D6304437A7ABEC96C5EB5 /* BarycentricEstimator.swift */,
+				B7A51C2DBB70457F1246A84DDCC31BEF /* Buffer.swift */,
+				E6312E968E9AFEDB711A2A3A74F69878 /* Config.swift */,
+				D5C0EB4F4E3B0C7DC19B6F7642574F13 /* EstimationError.swift */,
+				30F44FB4C449B39FF4753F6F96F7ABA0 /* EstimationFactory.swift */,
+				F57F1CC693AA9A6A2454178C56838929 /* EstimationStrategy.swift */,
+				93C9EE1085722E772CC0DDD47BA37E38 /* Estimator.swift */,
+				3CE5062865D2181EBD99D6A3EC3E0E6A /* FFTTransformer.swift */,
+				D1042CD66EF37F18A7980513FB011B84 /* HPSEstimator.swift */,
+				DFF1198072DE45BD64C89FF7CE2193A8 /* InputSignalTracker.swift */,
+				0343EB9C4F11A8AB1D93FCE228EB507E /* JainsEstimator.swift */,
+				7B50BA7703809A422A6CABEB0F6095B0 /* LocationEstimator.swift */,
+				A9F1FBA176980DCF3BDC68FFDEAD92CC /* MaxValueEstimator.swift */,
+				CF0745FCE5AD61677D5A21CFB12C043B /* OutputSignalTracker.swift */,
+				861C4EC0C4BD2EC5A7940E9AC9734BB4 /* PitchEngine.swift */,
+				C6BBF24DF37594A6775E939945B5E297 /* QuadradicEstimator.swift */,
+				A7448B1E64C3E58E939B3BEC9F164A1E /* QuinnsFirstEstimator.swift */,
+				647CF565BEAB95C8248157FF2863DB27 /* QuinnsSecondEstimator.swift */,
+				3E8B581793E1EBE897416925A7955162 /* SignalTracker.swift */,
+				626F8043C8FBABFC63C11E1A91203EE1 /* SimpleTransformer.swift */,
+				D1FDAF5FDFC14AC91EAC9C53DC39A577 /* Transformer.swift */,
+				DCA8AED558025529927C5F6EE3B75958 /* TransformFactory.swift */,
+				D48076E31A7F3C721E2B5464103411DE /* TransformStrategy.swift */,
+				30213C47D4FE0D2B01EE418C3DB83F3A /* Support Files */,
+			);
+			path = Beethoven;
+			sourceTree = "<group>";
+		};
+		6D73CF265EFDDFF07EB026173499290C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4723B379FCE77CFDE43B413C7CEF77EE /* Accelerate.framework */,
+				E959060BF437E90A271F32EA86031C4A /* AVFoundation.framework */,
+				A558AD3A91DE0F2C54F81BE95D48368D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				89A393472C9E49796F8438793244D3C8 /* Frameworks */,
+				D11539B7FD46B20607EBA41840DB860A /* Pods */,
+				B946FB759DD93114E7899197510D267E /* Products */,
+				CD3235A201136327EE90752E7994626D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89A393472C9E49796F8438793244D3C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3CE40D3CA713D3372504837FE0FCD22 /* Pitchy.framework */,
+				6D73CF265EFDDFF07EB026173499290C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B946FB759DD93114E7899197510D267E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FD2543D8008BA09B2A0E274A48DCFA0 /* Beethoven.framework */,
+				8D2DED7263874FC93C0876D9E504B292 /* Pitchy.framework */,
+				89B1C5096D5C30949188315EE2E8DC0E /* Pods_Tuneify.framework */,
+				435D29092BAEBF8657F654DA124F0FCA /* Pods_TuneifyTests.framework */,
+				9EC31A4B7CC2FFBBC4B425D661C0016C /* Pods_TuneifyUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C03AF07495FF0C0509FD3C4EBAF6B988 /* Pods-TuneifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5C30803508053CBB8ED3339DE0BCE72C /* Info.plist */,
+				224A29A198FEF91E04BF356DB67F76E4 /* Pods-TuneifyUITests.modulemap */,
+				11DDD8CB61174E57DCE71A2AB7B8FED0 /* Pods-TuneifyUITests-acknowledgements.markdown */,
+				1B8D37A363629DDB3EDB54B6D7D2A919 /* Pods-TuneifyUITests-acknowledgements.plist */,
+				5E3F2B293EC201AE02E6EC5DA6548F50 /* Pods-TuneifyUITests-dummy.m */,
+				38968098E593EB75EBB4F3C22E452AE3 /* Pods-TuneifyUITests-frameworks.sh */,
+				34629412C0B84C44B7FA150DDC7B5154 /* Pods-TuneifyUITests-resources.sh */,
+				5D90FC710CF16B80811A12CA52387C86 /* Pods-TuneifyUITests-umbrella.h */,
+				4441A62D7034435D2C281A933C5967B9 /* Pods-TuneifyUITests.debug.xcconfig */,
+				C8D09E2535F22EE4AC9A5AE689F58EB1 /* Pods-TuneifyUITests.release.xcconfig */,
+			);
+			name = "Pods-TuneifyUITests";
+			path = "Target Support Files/Pods-TuneifyUITests";
+			sourceTree = "<group>";
+		};
+		CD3235A201136327EE90752E7994626D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				220F915B72FF522E84851685AA7575BF /* Pods-Tuneify */,
+				4511CC30BA17DAD4E66D7597B0E076F1 /* Pods-TuneifyTests */,
+				C03AF07495FF0C0509FD3C4EBAF6B988 /* Pods-TuneifyUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D11539B7FD46B20607EBA41840DB860A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63640E48094D101B0B363CC8A8D7E85F /* Beethoven */,
+				EA49F4196B0F7F07342F52A0AD709A96 /* Pitchy */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EA49F4196B0F7F07342F52A0AD709A96 /* Pitchy */ = {
+			isa = PBXGroup;
+			children = (
+				A2EA2CA6A787C8E84147A905099BBBF1 /* AcousticWave.swift */,
+				E2538EAB7F13110AFB08DEFEBE9BBDCE /* Config.swift */,
+				EF2E661459D4C36311DD8C6CD2125F9D /* Error.swift */,
+				6DD82A0D4B3677BB6A723ED2169E80A1 /* Note.swift */,
+				C73BB52208198068441920B7021950A6 /* NoteCalculator.swift */,
+				4BE9E46D3E17E6B80F5DB43DD90BDB34 /* Pitch.swift */,
+				1894AAE2A4F1376E9684C3D3CECE0F14 /* PitchCalculator.swift */,
+				B9B21C401991C70F0C6ECB5FA281E412 /* WaveCalculator.swift */,
+				36B6C4397BC37F50A586466E71EBA7D1 /* Support Files */,
+			);
+			path = Pitchy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0C4EA2014978C0FB0549520AC3283BD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E744D8A69FEB22A3BCCBC116FB7EEE8 /* Pods-Tuneify-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29CB0D64F84BA8EDAC71E448C488A87F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000B8C35B1DE8683E4C96AB09374E457 /* Pods-TuneifyTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BB02F551AD5F255F408F0DD0CD21307 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD913E68D464F91CF9594ECFE49F771 /* Pitchy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C054B6AD4813E361D8A443596FE1C9F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66CF97558043E31EA40777AE2A84097 /* Pods-TuneifyUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFEA4BC4886B28CE5724F6F442DB02CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6EC2DD2E16B730DDF73C88506952CA /* Beethoven-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3A0739323066FCA67D3CC718AB646901 /* Pods-Tuneify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43FAEADDBEA873CC4AFCB9347B978C89 /* Build configuration list for PBXNativeTarget "Pods-Tuneify" */;
+			buildPhases = (
+				866C865FC6579FB165C97F62CAA61C2E /* Sources */,
+				0C464ECFDD2AC596DAF9E7CA07A21C99 /* Frameworks */,
+				0C4EA2014978C0FB0549520AC3283BD3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70B2CD6FDBC9B003E23CA603DEA96499 /* PBXTargetDependency */,
+				8B47EA79C34DAE76900EA10F42DC054F /* PBXTargetDependency */,
+			);
+			name = "Pods-Tuneify";
+			productName = "Pods-Tuneify";
+			productReference = 89B1C5096D5C30949188315EE2E8DC0E /* Pods_Tuneify.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3F2148881B422F7499162ACACC37D143 /* Beethoven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F6BE376842FEF13375FC52668A7AFE /* Build configuration list for PBXNativeTarget "Beethoven" */;
+			buildPhases = (
+				04DEB2725A82A01A1466EFDF8F86F7E2 /* Sources */,
+				015AA290B2E32CABC9657DEC62E3A1C5 /* Frameworks */,
+				EFEA4BC4886B28CE5724F6F442DB02CF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20AD56E7E59F57691A9BF29187E0403 /* PBXTargetDependency */,
+			);
+			name = Beethoven;
+			productName = Beethoven;
+			productReference = 5FD2543D8008BA09B2A0E274A48DCFA0 /* Beethoven.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		68ACC5C3C486397D46726424FF739A82 /* Pods-TuneifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD77857468753404C3AD19840AED321 /* Build configuration list for PBXNativeTarget "Pods-TuneifyTests" */;
+			buildPhases = (
+				CAAB852FBF13C8678CCAF0D5D557E307 /* Sources */,
+				0FBDEC02F1A4DA5E4022CB6C0CBF0717 /* Frameworks */,
+				29CB0D64F84BA8EDAC71E448C488A87F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TuneifyTests";
+			productName = "Pods-TuneifyTests";
+			productReference = 435D29092BAEBF8657F654DA124F0FCA /* Pods_TuneifyTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553FF007902EB31FE63DA914BDDD351B /* Build configuration list for PBXNativeTarget "Pitchy" */;
+			buildPhases = (
+				E571DF773A99D291891018C29C17CFBD /* Sources */,
+				2909C5E6BBA00361A9DC429C42C68E54 /* Frameworks */,
+				6BB02F551AD5F255F408F0DD0CD21307 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pitchy;
+			productName = Pitchy;
+			productReference = 8D2DED7263874FC93C0876D9E504B292 /* Pitchy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDF52B4A46E8C7F88C53FC0391ABB6D8 /* Pods-TuneifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34CC8A7EF7F70057E1F47C27720109F /* Build configuration list for PBXNativeTarget "Pods-TuneifyUITests" */;
+			buildPhases = (
+				A34010701EED1D02E66342F0759E1E93 /* Sources */,
+				41DC1DB75FF867386124BF80E8D6DBAD /* Frameworks */,
+				7C054B6AD4813E361D8A443596FE1C9F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TuneifyUITests";
+			productName = "Pods-TuneifyUITests";
+			productReference = 9EC31A4B7CC2FFBBC4B425D661C0016C /* Pods_TuneifyUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					D547ECBAFD0BAC79D81AE36137B80925 = {
+						DevelopmentTeam = H7J5ND6DG5;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B946FB759DD93114E7899197510D267E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F2148881B422F7499162ACACC37D143 /* Beethoven */,
+				D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */,
+				3A0739323066FCA67D3CC718AB646901 /* Pods-Tuneify */,
+				68ACC5C3C486397D46726424FF739A82 /* Pods-TuneifyTests */,
+				DDF52B4A46E8C7F88C53FC0391ABB6D8 /* Pods-TuneifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04DEB2725A82A01A1466EFDF8F86F7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4FE147AE34E3F2155B66A91E389FDF /* Array+Extensions.swift in Sources */,
+				C2EC4B13DC0F85298B2B85AE871DBD35 /* BarycentricEstimator.swift in Sources */,
+				56BE2E91871CB441CADCB53B2C77B398 /* Beethoven-dummy.m in Sources */,
+				2FC2B94F8965DB44B4F1A2552BC70511 /* Buffer.swift in Sources */,
+				6C0A8E721107BEB86C3F40EE27A86245 /* Config.swift in Sources */,
+				6F90BD17C9A552F3579230348DC130E0 /* EstimationError.swift in Sources */,
+				A02FA725368B9F5067246B16D22B805F /* EstimationFactory.swift in Sources */,
+				70B92815323E77F69937824CA239B6AB /* EstimationStrategy.swift in Sources */,
+				8D410872C0A2200E60497AB8395F59C7 /* Estimator.swift in Sources */,
+				C210855722BA44E4FDE24BAC79A7B44C /* FFTTransformer.swift in Sources */,
+				43573F03D53511D1412B71AFF07AC07A /* HPSEstimator.swift in Sources */,
+				8F2A7C3469E600FFBC6056F79B322EC1 /* InputSignalTracker.swift in Sources */,
+				F62CE5BE0F614AA64FAF792D6DDF282D /* JainsEstimator.swift in Sources */,
+				9D818CC379B5B18946157208A0A499AF /* LocationEstimator.swift in Sources */,
+				FF313B4F21C8A80D417A41F5850D346B /* MaxValueEstimator.swift in Sources */,
+				3F6A29B571A4D5FB8792CBCF4C92BD56 /* OutputSignalTracker.swift in Sources */,
+				A86AADDD78E4FB9A5C003F9DBD66B98E /* PitchEngine.swift in Sources */,
+				6F49484E7A394DBFCA5AF2C6ABFB3D91 /* QuadradicEstimator.swift in Sources */,
+				6378051D71EA27AF7724DC783FAD0702 /* QuinnsFirstEstimator.swift in Sources */,
+				FC9EDC8175C71637AAE282A0B66A6E11 /* QuinnsSecondEstimator.swift in Sources */,
+				63997D8F0F4649CB330965E3AC466DDC /* SignalTracker.swift in Sources */,
+				FE1278517CF18A25FDD8488772A6FDA5 /* SimpleTransformer.swift in Sources */,
+				559DFCBE5D8C7A43125930F08E125094 /* Transformer.swift in Sources */,
+				CDB5976F897591D6C6A8E18747ABB9FC /* TransformFactory.swift in Sources */,
+				3EA3D6FE284197163A75940BB41BB1BC /* TransformStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		866C865FC6579FB165C97F62CAA61C2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9DD3E14321AC34CEF70318D3DD4CCC /* Pods-Tuneify-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34010701EED1D02E66342F0759E1E93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41723B68CBD00651409567CDA05A8EF9 /* Pods-TuneifyUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAAB852FBF13C8678CCAF0D5D557E307 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00246FD6608E81995867F19253EE29AE /* Pods-TuneifyTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E571DF773A99D291891018C29C17CFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B2496FC2CAC29495D0A09946EFD16CE /* AcousticWave.swift in Sources */,
+				0D0F309DC3A69EE1B12FC3327839C85C /* Config.swift in Sources */,
+				3BB2534DCF13A506F1BEA2FFB530BA65 /* Error.swift in Sources */,
+				37D7598C4598060384560906F1A0B6C7 /* Note.swift in Sources */,
+				1ACCAD57CE934B6110C14CF4A53F7745 /* NoteCalculator.swift in Sources */,
+				D7498158B940FA0C972641DAAF82471E /* Pitch.swift in Sources */,
+				197E8602976643CB9329010568986AFC /* PitchCalculator.swift in Sources */,
+				3E2E09E45D3E8C651AE4C6F6B4418D16 /* Pitchy-dummy.m in Sources */,
+				4534DB58B44B2A5B0A877395EECDE26A /* WaveCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70B2CD6FDBC9B003E23CA603DEA96499 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Beethoven;
+			target = 3F2148881B422F7499162ACACC37D143 /* Beethoven */;
+			targetProxy = 146E28BA5A0F4C84184123145ED5E119 /* PBXContainerItemProxy */;
+		};
+		8B47EA79C34DAE76900EA10F42DC054F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */;
+			targetProxy = 4A50897655F84AC8B87535AD26B2C9BE /* PBXContainerItemProxy */;
+		};
+		D20AD56E7E59F57691A9BF29187E0403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pitchy;
+			target = D547ECBAFD0BAC79D81AE36137B80925 /* Pitchy */;
+			targetProxy = 6017C46D344F982C1CE0038EB73CA894 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0828242C20BC8E3FB53B31451AA4F4FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F9CF99F546A8D18B35B867C029459A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8D09E2535F22EE4AC9A5AE689F58EB1 /* Pods-TuneifyUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TuneifyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TuneifyUITests/Pods-TuneifyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TuneifyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28E62A5935436A632FDC432F756167B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 819E56926A6AAACBC55EF3D62A33238E /* Pods-TuneifyTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TuneifyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TuneifyTests/Pods-TuneifyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TuneifyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		56E0DF90F7F82F96A0B3869E28840A64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Pitchy;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		813F7080980B7C6F1D4E5611C27B61E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB46432D8FDEB5D51621A6E36E72C844 /* Pods-Tuneify.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tuneify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tuneify/Pods-Tuneify.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tuneify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A00FE73E5542EA86AA2418E62625D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3F2BDFDA90E24CD34F9AC67382DF2BE /* Pods-Tuneify.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Tuneify/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Tuneify/Pods-Tuneify.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Tuneify;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B7104833300D0894979914A86FA4566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62CF44113C095B726281F88C306614D5 /* Beethoven.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Beethoven/Beethoven-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Beethoven/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Beethoven/Beethoven.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Beethoven;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B018AD08B23EB608AA0B84A92B484B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA71E3219C8ADF44203E8FEA68780499 /* Pods-TuneifyTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TuneifyTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TuneifyTests/Pods-TuneifyTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TuneifyTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B117C4F53DC7936C5D558D7AB2ABB990 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4441A62D7034435D2C281A933C5967B9 /* Pods-TuneifyUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TuneifyUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TuneifyUITests/Pods-TuneifyUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TuneifyUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDF9CDDB5CBEACFC2C78BF27768EC862 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B9EFACBAB02EDFF991104DFAB9D98 /* Pitchy.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pitchy/Pitchy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pitchy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pitchy/Pitchy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Pitchy;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43FAEADDBEA873CC4AFCB9347B978C89 /* Build configuration list for PBXNativeTarget "Pods-Tuneify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813F7080980B7C6F1D4E5611C27B61E5 /* Debug */,
+				8A00FE73E5542EA86AA2418E62625D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F6BE376842FEF13375FC52668A7AFE /* Build configuration list for PBXNativeTarget "Beethoven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B7104833300D0894979914A86FA4566 /* Debug */,
+				0828242C20BC8E3FB53B31451AA4F4FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553FF007902EB31FE63DA914BDDD351B /* Build configuration list for PBXNativeTarget "Pitchy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF9CDDB5CBEACFC2C78BF27768EC862 /* Debug */,
+				56E0DF90F7F82F96A0B3869E28840A64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD77857468753404C3AD19840AED321 /* Build configuration list for PBXNativeTarget "Pods-TuneifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B018AD08B23EB608AA0B84A92B484B6D /* Debug */,
+				28E62A5935436A632FDC432F756167B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34CC8A7EF7F70057E1F47C27720109F /* Build configuration list for PBXNativeTarget "Pods-TuneifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B117C4F53DC7936C5D558D7AB2ABB990 /* Debug */,
+				0F9CF99F546A8D18B35B867C029459A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
