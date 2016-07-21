@@ -15,7 +15,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
     var pitchEngine: PitchEngine = PitchEngine(config: Config(
         bufferSize: 4096,
         transformStrategy: .FFT,
-        estimationStrategy: .HPS,
+        estimationStrategy: .MaxValue,
         audioURL: nil))
 
     override func viewDidLoad() {
@@ -24,6 +24,13 @@ class ViewController: UIViewController, PitchEngineDelegate {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBAction func stop(sender: AnyObject) {
+        self.pitchEngine.stop()
+    }
+    
+    @IBAction func start(sender: AnyObject) {
+        self.pitchEngine.start()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
