@@ -25,6 +25,7 @@ class KeyCorrector {
         "Ab-Major": ["Ab","Bb", "C", "Db", "Eb", "F", "G"],
         "Eb-Major": ["Eb","F", "G", "Ab", "Bb", "C", "D"],
         "Bb-Major": ["Bb","C", "D", "Eb", "F", "G", "A"],
+        "F-Major": ["F","G", "A", "Bb", "C", "D", "E"],
         ]
     
     init(audioNotes: [AudioSegment], key: String) {

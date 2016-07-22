@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		145C489A8D32890BCBDD4FDB /* Pods_Tuneify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D40C26C6C9A2C79F34F0C5 /* Pods_Tuneify.framework */; };
+		207D467D1D42BA9500015D6A /* Test.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 207D467C1D42BA9500015D6A /* Test.aifc */; };
 		20D1F0CD1D428D8900DDDFC9 /* KeyRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D1F0CC1D428D8900DDDFC9 /* KeyRetriever.swift */; };
 		392F57DCF04F000805840A00 /* Pods_TuneifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1510EFF7AEACC277E3279859 /* Pods_TuneifyTests.framework */; };
 		9B2C5D781D4164F200B6F735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C5D771D4164F200B6F735 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		05F69D519F3C1C8CA03CF263 /* Pods-Tuneify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tuneify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tuneify/Pods-Tuneify.debug.xcconfig"; sourceTree = "<group>"; };
 		1510EFF7AEACC277E3279859 /* Pods_TuneifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207D467C1D42BA9500015D6A /* Test.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.aifc; sourceTree = "<group>"; };
 		20D1F0CC1D428D8900DDDFC9 /* KeyRetriever.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyRetriever.swift; sourceTree = "<group>"; };
 		3396485C4249BDAF7EA0CF4B /* Pods_TuneifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TuneifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E4FE7E9A001F93C327E2ED /* Pods-TuneifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneifyTests/Pods-TuneifyTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 		9B2C5D6B1D4164F200B6F735 = {
 			isa = PBXGroup;
 			children = (
+				207D467C1D42BA9500015D6A /* Test.aifc */,
 				9B2C5D761D4164F200B6F735 /* Tuneify */,
 				9B2C5D8B1D4164F200B6F735 /* TuneifyTests */,
 				9B2C5D961D4164F200B6F735 /* TuneifyUITests */,
@@ -294,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207D467D1D42BA9500015D6A /* Test.aifc in Resources */,
 				9B2C5D821D4164F200B6F735 /* LaunchScreen.storyboard in Resources */,
 				9B2C5D7F1D4164F200B6F735 /* Assets.xcassets in Resources */,
 				9BA4DAF81D42B9D8006E1236 /* Test.aifc in Resources */,
