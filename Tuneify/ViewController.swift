@@ -116,8 +116,8 @@ class ViewController: UIViewController, PitchEngineDelegate {
         if(audioNotes.count > 0) {
             var uniqueNotes = [AudioSegment]()
             for index in 0...audioNotes.count-1 {
-                if(!uniqueNotes.contains(audioNotes[index]) && audioNotes[index].getPitch() != "NA") {
-                    let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                if(!uniqueNotes.contains(audioNote) && audioNotes[index].getPitch() != "NA") {
                     uniqueNotes.append(audioNote)
                 }
             }
@@ -174,8 +174,8 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 var key = keyRet.getKey(getPitchArray(uniqueNotes!))
                 print (key)
                 
-                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
-                correctedNotes.correctNotes()
+                //var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
+                //correctedNotes.correctNotes()
             }
         }
     }
