@@ -88,7 +88,7 @@ public class InputSignalTracker: SignalTracker {
       let connection = audioOutput.connections[0] as! AVCaptureConnection
       let firstAudioChannel = connection.audioChannels[0] as! AVCaptureAudioChannel
 
-      audioChannel = firstAudioChannel
+      self.audioChannel = firstAudioChannel
     } catch {}
   }
 }
