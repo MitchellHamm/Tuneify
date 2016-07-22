@@ -42,7 +42,7 @@ class KeyRetriever {
     
     func getKey(notesArray: [String]) -> String {
         
-        let notesSet = Set(notesArray)
+        let notesSet = Set(stripNumbers(notesArray))
         
         
         for(key, notes) in keyList{
@@ -63,12 +63,13 @@ class KeyRetriever {
             var count = 0
             let notes = keyList[keys[i]]
             
+            
             for note in notesArray
             {
                 if notes!.contains(note) { count += 1 }
             }
             countArray.append(count);
-            
+            print(keys)
         }
         
         var max = countArray.maxElement()!
@@ -87,5 +88,13 @@ class KeyRetriever {
     
     func getRelative(key: String) -> String{
         return keyRelative[key]!
+    }
+    
+    func stripNumbers(notesArr: [String])->[String]{
+        var res = [String]()
+        for currentNote in notesArr{
+            res.append((currentNote.componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""))
+        }
+        return res
     }
 }

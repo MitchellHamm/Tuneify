@@ -13,6 +13,8 @@ import AVFoundation
 
 var inputSound: AVAudioPlayer!
 
+
+
 class ViewController: UIViewController, PitchEngineDelegate {
     
     let silenceCutOff: Double = 2.0
@@ -34,10 +36,10 @@ class ViewController: UIViewController, PitchEngineDelegate {
         self.pitchEngine.levelThreshold = -30.0
         self.pitchEngine.delegate = self
         
-        let key = KeyRetriever()
+        //let key = KeyRetriever()
         
-        let ret = key.getKey(["F#","G#", "A", "B", "C#", "D#", "E#"])
-        print(ret)
+       // let ret = key.getKey(["F#","G#", "A", "B", "C#", "D#", "E#"])
+        //print(ret)
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -136,8 +138,12 @@ class ViewController: UIViewController, PitchEngineDelegate {
         }
     }
     
-    func calculateNoteLength(inout audioNotes: [AudioSegment]) {
-        
+    func getPitchArray(audioNotes: [AudioSegment]) ->[String]{
+        var pitchArray = [String]()
+        for index in 0...audioNotes.count-1 {
+            pitchArray.append(audioNotes[index].toString())
+        }
+        return pitchArray
     }
     
     func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
@@ -163,9 +169,13 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 self.stripExtremeNotes(&self.audioNotes)
                 //Now pass the unique notes to find the key
                 var uniqueNotes = self.getUniqueNotes(self.audioNotes)
-                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: "F#-Major")
+                
+                let keyRet = KeyRetriever()
+                var key = keyRet.getKey(getPitchArray(uniqueNotes!))
+                print (key)
+                
+                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
                 correctedNotes.correctNotes()
-                self.calculateNoteLength(&self.audioNotes)
             }
         }
     }

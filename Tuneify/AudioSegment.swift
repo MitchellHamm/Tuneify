@@ -42,4 +42,8 @@ class AudioSegment: Equatable {
     func setNoteLength(noteLength: Double) {
         self.noteLength = noteLength
     }
+    
+    func toString() -> String{
+        return self.pitch
+    }
 }
