@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxc-IJ-abm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxc-IJ-abm">
                                 <rect key="frame" x="277" y="318" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="7h0-lp-SJZ"/>
+                                </constraints>
                                 <state key="normal" title="Stop">
                                     <color key="titleColor" red="1" green="0.056997632882578753" blue="0.057158071334125538" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -26,19 +29,42 @@
                                     <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLg-B5-xqA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-J3-MFb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-J3-MFb">
                                 <rect key="frame" x="277" y="285" width="46" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qUk-1K-z6x"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g65-xu-Mub">
+                                <rect key="frame" x="238" y="187" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="TCS-l1-I4a"/>
+                                </constraints>
+                                <state key="normal" title="Tap to record"/>
+                                <connections>
+                                    <action selector="RecTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWw-f6-7PY"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.36199165386297655" green="0.84980601072311401" blue="0.40525128423041784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="g65-xu-Mub" firstAttribute="centerX" secondItem="l3E-J3-MFb" secondAttribute="centerX" id="2ev-3A-vmL"/>
+                            <constraint firstItem="g65-xu-Mub" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ub-ge-an3"/>
+                            <constraint firstItem="g65-xu-Mub" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="167" id="8Hd-iI-VPT"/>
+                            <constraint firstItem="g65-xu-Mub" firstAttribute="centerX" secondItem="cxc-IJ-abm" secondAttribute="centerX" id="ACC-LH-0Kc"/>
+                            <constraint firstItem="l3E-J3-MFb" firstAttribute="top" secondItem="g65-xu-Mub" secondAttribute="bottom" constant="68" id="Xv1-Z3-kmf"/>
+                            <constraint firstItem="cxc-IJ-abm" firstAttribute="top" secondItem="l3E-J3-MFb" secondAttribute="bottom" constant="3" id="fZr-Ag-wgM"/>
+                            <constraint firstItem="cxc-IJ-abm" firstAttribute="leading" secondItem="l3E-J3-MFb" secondAttribute="leading" id="zYn-RO-9yI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tapToRecordButton" destination="g65-xu-Mub" id="Udl-ly-P56"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="192" y="418"/>
         </scene>
     </scenes>
 </document>
