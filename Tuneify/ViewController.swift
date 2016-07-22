@@ -64,7 +64,10 @@ class ViewController: UIViewController, PitchEngineDelegate , AVAudioRecorderDel
     @IBAction func stop(sender: AnyObject) {
         self.pitchEngine.stop()
         
-
+        if inputSound != nil {
+            inputSound.stop()
+            inputSound = nil
+        }
     }
     
     @IBAction func RecTapped(sender: AnyObject) {
@@ -74,6 +77,15 @@ class ViewController: UIViewController, PitchEngineDelegate , AVAudioRecorderDel
         
         let path = NSBundle.mainBundle().pathForResource("Test.aifc", ofType:nil)!
         let url = NSURL(fileURLWithPath: path)
+        
+        do {
+            let sound = try AVAudioPlayer(contentsOfURL: url)
+            inputSound = sound
+            //sound.play()
+        } catch {
+            // couldn't load file :(
+            print ("Error loading file")
+        }
         
         self.pitchEngine.start()
         
@@ -113,8 +125,8 @@ class ViewController: UIViewController, PitchEngineDelegate , AVAudioRecorderDel
         if(audioNotes.count > 0) {
             var uniqueNotes = [AudioSegment]()
             for index in 0...audioNotes.count-1 {
-                if(!uniqueNotes.contains(audioNotes[index]) && audioNotes[index].getPitch() != "NA") {
-                    let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                if(!uniqueNotes.contains(audioNote) && audioNotes[index].getPitch() != "NA") {
                     uniqueNotes.append(audioNote)
                 }
             }
@@ -169,10 +181,10 @@ class ViewController: UIViewController, PitchEngineDelegate , AVAudioRecorderDel
                 
                 let keyRet = KeyRetriever()
                 var key = keyRet.getKey(getPitchArray(uniqueNotes!))
-                print (key.description)
+                print (key)
                 
-                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key[0])
-                correctedNotes.correctNotes()
+                //var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
+                //correctedNotes.correctNotes()
             }
         }
     }
