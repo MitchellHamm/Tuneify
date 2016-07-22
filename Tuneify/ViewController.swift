@@ -58,25 +58,13 @@ class ViewController: UIViewController, PitchEngineDelegate {
     @IBAction func stop(sender: AnyObject) {
         self.pitchEngine.stop()
         
-//        if inputSound != nil {
-//            inputSound.stop()
-//            inputSound = nil
-//        }
+
     }
     
     @IBAction func start(sender: AnyObject) {
         
-       // let path = NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!
-//        let url = NSURL(fileURLWithPath: path)
-//        
-//        do {
-//            let sound = try AVAudioPlayer(contentsOfURL: url)
-//            inputSound = sound
-//            //sound.play()
-//        } catch {
-//            // couldn't load file :(
-//            print ("Error loading file")
-//        }
+        let path = NSBundle.mainBundle().pathForResource("Test.aifc", ofType:nil)!
+        let url = NSURL(fileURLWithPath: path)
         
         self.pitchEngine.start()
         
