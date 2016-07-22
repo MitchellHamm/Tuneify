@@ -37,4 +37,8 @@ class AudioSegment: Equatable {
     func setTimeEstimate(timeEstimate: Double) {
         self.timeEstimate = timeEstimate
     }
+    
+    func toString() -> String{
+        return self.pitch
+    }
 }
