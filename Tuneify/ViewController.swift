@@ -120,7 +120,8 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 self.stripExtremeNotes(&self.audioNotes)
                 //Now pass the unique notes to find the key
                 var uniqueNotes = self.getUniqueNotes(self.audioNotes)
-                
+                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: "Bb-Major")
+                correctedNotes.correctNotes()
             }
         }
     }
