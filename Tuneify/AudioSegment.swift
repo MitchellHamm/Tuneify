@@ -17,6 +17,7 @@ class AudioSegment: Equatable {
     private var pitch: String = ""
     private var timeEstimate: Double = 0.0
     private var noteLength: Double = 0.0
+    private var relativeNoteLength: Int = 0
     
     init(pitch: String, timeEstimate: Double) {
         self.pitch = pitch
@@ -45,5 +46,17 @@ class AudioSegment: Equatable {
     
     func toString() -> String{
         return self.pitch
+    }
+    
+    func getNoteLength() -> Double {
+        return self.noteLength
+    }
+    
+    func setRelativeNoteLength(length: Int) {
+        self.relativeNoteLength = length
+    }
+    
+    func getRelativeNoteLength() -> Int {
+        return self.relativeNoteLength
     }
 }

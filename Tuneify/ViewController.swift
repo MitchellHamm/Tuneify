@@ -146,6 +146,16 @@ class ViewController: UIViewController, PitchEngineDelegate {
         return pitchArray
     }
     
+    func calculateNoteLengths(inout audioNotes: [AudioSegment]) {
+        for index in 0...audioNotes.count-1 {
+            if(index != audioNotes.count-1) {
+                //Ignore the last note during the calculation
+                let noteTime = audioNotes[index+1].getTimeEstimate() - audioNotes[index].getTimeEstimate()
+                audioNotes[index].setNoteLength(noteTime)
+            }
+        }
+    }
+    
     func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
         //Delegate
         let audioNote = AudioSegment(pitch: pitch.note.string, timeEstimate: CACurrentMediaTime())
@@ -165,7 +175,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 //Guard that we only stop a running instance
                 self.pitchEngine.stop()
                 //We've signaled the end of analysis, time to start working with the data
-                //Exclude notes below 55hz and above 14080
+                //Exclude notes below 55hz and above 14080hz
                 self.stripExtremeNotes(&self.audioNotes)
                 //Now pass the unique notes to find the key
                 var uniqueNotes = self.getUniqueNotes(self.audioNotes)
@@ -174,8 +184,15 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 var key = keyRet.getKey(getPitchArray(uniqueNotes!))
                 print (key)
                 
-                //var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
-                //correctedNotes.correctNotes()
+                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key[0])
+                correctedNotes.correctNotes()
+                
+                self.calculateNoteLengths(&self.audioNotes)
+                
+                let bpmAnalyzer = BPMAnalyzer(audio: self.audioNotes)
+                bpmAnalyzer.getBPM()
+                self.audioNotes = bpmAnalyzer.getAnalyzedAudio()
+                print(self.audioNotes)
             }
         }
     }
