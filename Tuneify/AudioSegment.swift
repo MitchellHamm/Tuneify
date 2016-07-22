@@ -16,6 +16,7 @@ func ==(lhs: AudioSegment, rhs: AudioSegment) -> Bool {
 class AudioSegment: Equatable {
     private var pitch: String = ""
     private var timeEstimate: Double = 0.0
+    private var noteLength: Double = 0.0
     
     init(pitch: String, timeEstimate: Double) {
         self.pitch = pitch
@@ -36,6 +37,10 @@ class AudioSegment: Equatable {
     
     func setTimeEstimate(timeEstimate: Double) {
         self.timeEstimate = timeEstimate
+    }
+    
+    func setNoteLength(noteLength: Double) {
+        self.noteLength = noteLength
     }
     
     func toString() -> String{

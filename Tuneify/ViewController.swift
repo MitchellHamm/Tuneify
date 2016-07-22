@@ -33,7 +33,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pitchEngine.levelThreshold = -20.0
+        self.pitchEngine.levelThreshold = -30.0
         self.pitchEngine.delegate = self
         
         //let key = KeyRetriever()
@@ -117,7 +117,8 @@ class ViewController: UIViewController, PitchEngineDelegate {
             var uniqueNotes = [AudioSegment]()
             for index in 0...audioNotes.count-1 {
                 if(!uniqueNotes.contains(audioNotes[index]) && audioNotes[index].getPitch() != "NA") {
-                    uniqueNotes.append(audioNotes[index])
+                    let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                    uniqueNotes.append(audioNote)
                 }
             }
             return uniqueNotes
@@ -149,7 +150,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
         //Delegate
         let audioNote = AudioSegment(pitch: pitch.note.string, timeEstimate: CACurrentMediaTime())
         self.audioNotes.append(audioNote)
-        NSLog("pitch : \(pitch.note.string) - percentage : \(pitch.closestOffset.percentage)")
+        //NSLog("pitch : \(pitch.note.string) - percentage : \(pitch.closestOffset.percentage)")
     }
     
     func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType) {
