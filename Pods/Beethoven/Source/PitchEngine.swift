@@ -3,7 +3,7 @@ import AVFoundation
 import Pitchy
 
 public protocol PitchEngineDelegate: class {
-  func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch)
+    func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch)
   func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType)
 }
 
