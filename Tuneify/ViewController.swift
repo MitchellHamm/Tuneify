@@ -29,7 +29,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
         bufferSize: 4096,
         transformStrategy: .FFT,
         estimationStrategy: .MaxValue,
-        audioURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!)))
+        audioURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Test.aifc", ofType:nil)!)))
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,25 +58,25 @@ class ViewController: UIViewController, PitchEngineDelegate {
     @IBAction func stop(sender: AnyObject) {
         self.pitchEngine.stop()
         
-        if inputSound != nil {
-            inputSound.stop()
-            inputSound = nil
-        }
+//        if inputSound != nil {
+//            inputSound.stop()
+//            inputSound = nil
+//        }
     }
     
     @IBAction func start(sender: AnyObject) {
         
-        let path = NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!
-        let url = NSURL(fileURLWithPath: path)
-        
-        do {
-            let sound = try AVAudioPlayer(contentsOfURL: url)
-            inputSound = sound
-            //sound.play()
-        } catch {
-            // couldn't load file :(
-            print ("Error loading file")
-        }
+       // let path = NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!
+//        let url = NSURL(fileURLWithPath: path)
+//        
+//        do {
+//            let sound = try AVAudioPlayer(contentsOfURL: url)
+//            inputSound = sound
+//            //sound.play()
+//        } catch {
+//            // couldn't load file :(
+//            print ("Error loading file")
+//        }
         
         self.pitchEngine.start()
         
@@ -171,9 +171,9 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 
                 let keyRet = KeyRetriever()
                 var key = keyRet.getKey(getPitchArray(uniqueNotes!))
-                print (key)
+                print (key.description)
                 
-                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key)
+                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: key[0])
                 correctedNotes.correctNotes()
             }
         }

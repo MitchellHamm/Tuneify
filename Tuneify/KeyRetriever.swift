@@ -23,6 +23,7 @@ class KeyRetriever {
         "Ab-Major": ["Ab","Bb", "C", "Db", "Eb", "F", "G"],
         "Eb-Major": ["Eb","F", "G", "Ab", "Bb", "C", "D"],
         "Bb-Major": ["Bb","C", "D", "Eb", "F", "G", "A"],
+        "F-Major": ["F","G", "A", "Bb", "C", "D", "E"],
     ]
     
     var keyRelative: [String: String] = [
@@ -40,16 +41,16 @@ class KeyRetriever {
         "F-Major": "D-Minor"
     ]
     
-    func getKey(notesArray: [String]) -> String {
-        
-        let notesSet = Set(stripNumbers(notesArray))
+    func getKey(notesArray1: [String]) -> [String] {
+        let notesArray = stripNumbers(notesArray1)
+        let notesSet = Set(notesArray)
         
         
         for(key, notes) in keyList{
             let keyListSet = Set(notes)
             if notesSet.isSubsetOf(keyListSet)
             {
-               return key
+               return [key]
             }
         
         }
@@ -59,7 +60,7 @@ class KeyRetriever {
         
         var keys = keyList.keys.sort()
         
-        for i in 0 ..< keys.count {
+        for i in 0 ..< keys.count - 1{
             var count = 0
             let notes = keyList[keys[i]]
             
@@ -74,13 +75,12 @@ class KeyRetriever {
         
         var max = countArray.maxElement()!
         
-        var result = keys[countArray.indexOf(max)!]
-        countArray.removeAtIndex(countArray.indexOf(max)!)
+        var result = [keys[countArray.indexOf(max)!]]
+        countArray[countArray.indexOf(max)!] = -1
         
         while countArray.indexOf(max) > 0 {
-            result += " or \(keys[countArray.indexOf(max)!])"
-            countArray.removeAtIndex(countArray.indexOf(max)!)
-        
+            result.append(keys[countArray.indexOf(max)!])
+           countArray[countArray.indexOf(max)!] = -1
         }
         
         return result
