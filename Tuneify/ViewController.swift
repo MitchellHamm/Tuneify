@@ -144,7 +144,23 @@ class ViewController: UIViewController, PitchEngineDelegate {
     
     func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType) {
         //Delegate
-        print (error)
+        let audioNote = AudioSegment(pitch: "NA", timeEstimate: CACurrentMediaTime())
+        self.audioNotes.append(audioNote)
+        
+        let timeSinceLastNote = self.timeSinceLastNote()
+        if(timeSinceLastNote > self.silenceCutOff || timeSinceLastNote == 0.0) {
+            //Too much silence, lets stop analyzing
+            if(self.pitchEngine.active) {
+                //Guard that we only stop a running instance
+                self.pitchEngine.stop()
+                //We've signaled the end of analysis, time to start working with the data
+                //Exclude notes below 55hz and above 14080
+                self.stripExtremeNotes(&self.audioNotes)
+                //Now pass the unique notes to find the key
+                var uniqueNotes = self.getUniqueNotes(self.audioNotes)
+                
+            }
+        }
     }
 
 
