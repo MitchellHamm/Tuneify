@@ -17,10 +17,10 @@
 		9B2C5D821D4164F200B6F735 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C5D801D4164F200B6F735 /* LaunchScreen.storyboard */; };
 		9B2C5D8D1D4164F200B6F735 /* TuneifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C5D8C1D4164F200B6F735 /* TuneifyTests.swift */; };
 		9B2C5D981D4164F200B6F735 /* TuneifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C5D971D4164F200B6F735 /* TuneifyUITests.swift */; };
-		9B2C5DA61D424F2000B6F735 /* Test.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9B2C5DA51D424F2000B6F735 /* Test.m4a */; };
 		9B2C5DA81D4257CA00B6F735 /* Beethoven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B2C5DA71D4257CA00B6F735 /* Beethoven.framework */; };
 		9BA4DAF31D425FC7006E1236 /* AudioSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4DAF21D425FC7006E1236 /* AudioSegment.swift */; };
 		9BA4DAF61D4291FC006E1236 /* KeyCorrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4DAF41D427FE7006E1236 /* KeyCorrector.swift */; };
+		9BA4DAF81D42B9D8006E1236 /* Test.aifc in Resources */ = {isa = PBXBuildFile; fileRef = 9BA4DAF71D42B9D8006E1236 /* Test.aifc */; };
 		C267059B5B5AF3271B3D790A /* Pods_TuneifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3396485C4249BDAF7EA0CF4B /* Pods_TuneifyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,10 +63,10 @@
 		9B2C5D931D4164F200B6F735 /* TuneifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuneifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B2C5D971D4164F200B6F735 /* TuneifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuneifyUITests.swift; sourceTree = "<group>"; };
 		9B2C5D991D4164F200B6F735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B2C5DA51D424F2000B6F735 /* Test.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.m4a; sourceTree = "<group>"; };
 		9B2C5DA71D4257CA00B6F735 /* Beethoven.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beethoven.framework; path = "../../Library/Developer/Xcode/DerivedData/Tuneify-aufrybjldshqnjbzdhycaemqzpbt/Build/Products/Debug-iphonesimulator/Beethoven/Beethoven.framework"; sourceTree = "<group>"; };
 		9BA4DAF21D425FC7006E1236 /* AudioSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSegment.swift; sourceTree = "<group>"; };
 		9BA4DAF41D427FE7006E1236 /* KeyCorrector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCorrector.swift; sourceTree = "<group>"; };
+		9BA4DAF71D42B9D8006E1236 /* Test.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test.aifc; sourceTree = "<group>"; };
 		BBE7DF482399145B114F3602 /* Pods-TuneifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TuneifyUITests/Pods-TuneifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0E840B4A399565E47905EA0 /* Pods-TuneifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TuneifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TuneifyTests/Pods-TuneifyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,9 +145,9 @@
 				9B2C5D7E1D4164F200B6F735 /* Assets.xcassets */,
 				9B2C5D801D4164F200B6F735 /* LaunchScreen.storyboard */,
 				9B2C5D831D4164F200B6F735 /* Info.plist */,
-				9B2C5DA51D424F2000B6F735 /* Test.m4a */,
 				9BA4DAF21D425FC7006E1236 /* AudioSegment.swift */,
 				9BA4DAF41D427FE7006E1236 /* KeyCorrector.swift */,
+				9BA4DAF71D42B9D8006E1236 /* Test.aifc */,
 			);
 			path = Tuneify;
 			sourceTree = "<group>";
@@ -294,9 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B2C5DA61D424F2000B6F735 /* Test.m4a in Resources */,
 				9B2C5D821D4164F200B6F735 /* LaunchScreen.storyboard in Resources */,
 				9B2C5D7F1D4164F200B6F735 /* Assets.xcassets in Resources */,
+				9BA4DAF81D42B9D8006E1236 /* Test.aifc in Resources */,
 				9B2C5D7D1D4164F200B6F735 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

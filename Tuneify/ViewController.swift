@@ -27,11 +27,11 @@ class ViewController: UIViewController, PitchEngineDelegate {
         bufferSize: 4096,
         transformStrategy: .FFT,
         estimationStrategy: .MaxValue,
-        audioURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!)))
+        audioURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Test.aifc", ofType:nil)!)))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.pitchEngine.levelThreshold = -20.0
+        self.pitchEngine.levelThreshold = -30.0
         self.pitchEngine.delegate = self
         
         let key = KeyRetriever()
@@ -64,7 +64,7 @@ class ViewController: UIViewController, PitchEngineDelegate {
     
     @IBAction func start(sender: AnyObject) {
         
-        let path = NSBundle.mainBundle().pathForResource("Test.m4a", ofType:nil)!
+        let path = NSBundle.mainBundle().pathForResource("Test.aifc", ofType:nil)!
         let url = NSURL(fileURLWithPath: path)
         
         do {
@@ -115,7 +115,8 @@ class ViewController: UIViewController, PitchEngineDelegate {
             var uniqueNotes = [AudioSegment]()
             for index in 0...audioNotes.count-1 {
                 if(!uniqueNotes.contains(audioNotes[index]) && audioNotes[index].getPitch() != "NA") {
-                    uniqueNotes.append(audioNotes[index])
+                    let audioNote = AudioSegment(pitch: (audioNotes[index].getPitch().componentsSeparatedByCharactersInSet(NSCharacterSet.decimalDigitCharacterSet()) as NSArray).componentsJoinedByString(""), timeEstimate: audioNotes[index].getTimeEstimate())
+                    uniqueNotes.append(audioNote)
                 }
             }
             return uniqueNotes
@@ -135,11 +136,15 @@ class ViewController: UIViewController, PitchEngineDelegate {
         }
     }
     
+    func calculateNoteLength(inout audioNotes: [AudioSegment]) {
+        
+    }
+    
     func pitchEngineDidRecievePitch(pitchEngine: PitchEngine, pitch: Pitch) {
         //Delegate
         let audioNote = AudioSegment(pitch: pitch.note.string, timeEstimate: CACurrentMediaTime())
         self.audioNotes.append(audioNote)
-        NSLog("pitch : \(pitch.note.string) - percentage : \(pitch.closestOffset.percentage)")
+        //NSLog("pitch : \(pitch.note.string) - percentage : \(pitch.closestOffset.percentage)")
     }
     
     func pitchEngineDidRecieveError(pitchEngine: PitchEngine, error: ErrorType) {
@@ -158,8 +163,9 @@ class ViewController: UIViewController, PitchEngineDelegate {
                 self.stripExtremeNotes(&self.audioNotes)
                 //Now pass the unique notes to find the key
                 var uniqueNotes = self.getUniqueNotes(self.audioNotes)
-                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: "Bb-Major")
+                var correctedNotes = KeyCorrector(audioNotes: self.audioNotes, key: "F#-Major")
                 correctedNotes.correctNotes()
+                self.calculateNoteLength(&self.audioNotes)
             }
         }
     }
